@@ -4,8 +4,45 @@
              xmlns:local="clr-namespace:AbsoluteLayout"
              x:Class="AbsoluteLayout.MainPage">
 
-	<Label Text="Welcome to Xamarin.Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+    <AbsoluteLayout>
+        <Button  
+                 Text="Caja Uno"
+                 BackgroundColor="Green"
+                 AbsoluteLayout.LayoutBounds="70,10,250,250"> 
+
+        </Button>
+        <Button  
+                 Text="Caja dos"
+                 BackgroundColor="Aqua"
+                 AbsoluteLayout.LayoutBounds="60,10,250,25">
+
+        </Button>
+        <Button 
+                 Text="porcentual"
+                 BackgroundColor="Azure"
+                 AbsoluteLayout.LayoutBounds="200,100,.80,.50"
+                 AbsoluteLayout.LayoutFlags="All"   >
+            
+
+        </Button>
+        <Button 
+                 Text="Ancho porcentual"
+                 BackgroundColor="Orange"
+                 AbsoluteLayout.LayoutBounds="150,500,8,.4"
+                 AbsoluteLayout.LayoutFlags="WidthProportional"   >
+
+
+        </Button>
+        <Button 
+                 Text="Ancho porcentual"
+                 BackgroundColor="Gray"
+                 AbsoluteLayout.LayoutBounds="300,300,80,.4"
+                 AbsoluteLayout.LayoutFlags="WidthProportional"   >
+
+
+        </Button>
+
+
+    </AbsoluteLayout>
 
 </ContentPage>
