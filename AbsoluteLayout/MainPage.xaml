@@ -4,7 +4,7 @@
              xmlns:local="clr-namespace:AbsoluteLayout"
              x:Class="AbsoluteLayout.MainPage">
 
-    <AbsoluteLayout>
+    <!--<AbsoluteLayout>
         <Button  
                  Text="Caja Uno"
                  BackgroundColor="Green"
@@ -14,13 +14,13 @@
         <Button  
                  Text="Caja dos"
                  BackgroundColor="Aqua"
-                 AbsoluteLayout.LayoutBounds="60,10,250,25">
+                 AbsoluteLayout.LayoutBounds="120,160,250,60">
 
         </Button>
         <Button 
                  Text="porcentual"
-                 BackgroundColor="Azure"
-                 AbsoluteLayout.LayoutBounds="200,100,.80,.50"
+                 BackgroundColor="Red"
+                 AbsoluteLayout.LayoutBounds=".8,.8,.3,.4"
                  AbsoluteLayout.LayoutFlags="All"   >
             
 
@@ -28,21 +28,60 @@
         <Button 
                  Text="Ancho porcentual"
                  BackgroundColor="Orange"
-                 AbsoluteLayout.LayoutBounds="150,500,8,.4"
+                 AbsoluteLayout.LayoutBounds="100,230,.4,90"
                  AbsoluteLayout.LayoutFlags="WidthProportional"   >
 
 
         </Button>
         <Button 
-                 Text="Ancho porcentual"
+                 Text="alto porcentual"
                  BackgroundColor="Gray"
-                 AbsoluteLayout.LayoutBounds="300,300,80,.4"
-                 AbsoluteLayout.LayoutFlags="WidthProportional"   >
+                 AbsoluteLayout.LayoutBounds="100,300,90,.1"
+                 AbsoluteLayout.LayoutFlags="HeightProportional"   >
 
 
         </Button>
 
 
-    </AbsoluteLayout>
+    </AbsoluteLayout>-->
+    <StackLayout Margin=" 10,20,10,10">
+    <StackLayout Orientation="Horizontal">
+        <Label
+              Text="Nombre"
+            VerticalOptions="Center"
+            FontAttributes="Bold"
+            >
+        </Label>
+        <Entry  Placeholder=" Ingrese su Nombre"
+                HorizontalOptions="FillAndExpand">
+            
+            
+        </Entry>
 
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+                <Label
+              Text="Direccion"
+            VerticalOptions="Center"
+            FontAttributes="Bold"
+            >
+                </Label>
+                <Entry  Placeholder=" Ingrese su direccion"
+                HorizontalOptions="FillAndExpand">
+                </Entry>
+           
+
+
+          </StackLayout>
+        <StackLayout >
+        <BoxView
+                BackgroundColor="Green"
+                VerticalOptions="FillAndExpand"
+                HeightRequest="500"
+                HorizontalOptions="FillAndExpand">
+
+        </BoxView>
+        </StackLayout>
+        
+    </StackLayout>
 </ContentPage>
